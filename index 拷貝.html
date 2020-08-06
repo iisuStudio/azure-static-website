@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Server</title>
+		<style type="text/css">
+		* {		
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-box-sizing: border-box;
+		}
+		body, html {
+			background-color: #484848;
+			color: #333333;
+			font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+			font-size: 14px;
+			height: 100%;
+			line-height: 21px;
+			margin: 0px;
+			text-align: center;
+			word-spacing: -1px;
+		}
+		#wrapper {
+			height: 100%;
+			min-height: 660px;
+			position: relative;
+		}
+		#content {
+			padding: 26px;
+		}
+		#main {
+			background: #272822;
+			border: 1px solid #D5D5D6;
+			border-top-color: #E0E1E2;
+			border-bottom-color: #C0C1C2;
+			margin: 0px auto 0px auto;
+			padding: 20px 26px 19px 26px;
+			width: 730px;
+			-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+			-moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+			box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			border-radius: 6px;
+		}
+		h1 {
+			color: #FFFFFF;
+			font-size: 28px;
+			font-weight: normal;
+			line-height: 36px;
+			margin: 0px 0px 8px 0px;
+		}
+		p {
+			color: #FFFFFF;
+			line-height: 21px;
+			margin: 0px;
+		}
+		#main img {
+			margin-bottom: 40px;
+			margin-top: 48px;
+		}
+		#navigation {
+			color: #646464;
+			font-size: 12px;
+			margin-top: 20px;
+		}
+		a, a:link, a:visited, a:active {
+			color: #4B8ABA;
+			text-decoration: none;
+			margin: 3px;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		#applink{
+			margin-top: 48px;
+		}
+		#footer {
+			bottom: 6px;
+			left: 0;
+			position: absolute;
+			right: 0;
+		}
+		#footer a {
+			font-size: 12px;
+			color: #B1B1B1;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="content">
+				<div id="main">
+					<h1>歡迎光臨 iisuStudio</h1>
+					<p>這是一個私人的工作網頁。主要用於研究直覺式的交互網頁平台，和提供詳細記錄的工作成果及心情發想。歡迎隨意瀏覽觀看。</p>
+					<img src="Server.png" width="256px" height="256px" alt="Server" />
+					<p>若要使用您自定的網頁內容，您也可以在此自定網站的「Store Site Files In」檔案夾（DocumentRoot）中加入您自己的索引檔案，來取代此暫存網頁。</p>
+				</div>
+				<div id="applink">
+					<input type="button" name="app1" value="app1" onclick="location.href='app1.html'" />
+					<input type="button" name="app1-ngapp" value="app1-ngapp" onclick="location.href='app1-ngapp.html'" />
+					<input type="button" name="app2" value="app2" onclick="parent.location='http://ntuhackthon.azurewebsites.net'" />
+					<input type="button" name="Translate API" value="Translate API" onclick="location.href='Translate API.html'" />
+				</div>
+				<div id="footer">
+					<a href="http://www.apple.com/tw/server/">Copyright &copy; 2011-2013 Apple Inc. 保留一切權利。</a>
+				</div>
+				
+			</div>
+		</div>
+		
+
+		
+	</body>
+</html>

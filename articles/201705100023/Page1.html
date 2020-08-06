@@ -1,0 +1,927 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>即時視訊串流加解密的服務品質與效能測試</title>
+        <!-- 網頁編碼-->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <!-- 網頁屬於中文網站-->
+        <meta http-equiv="content-language" content="zh-tw" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!-- 側邊欄清單動態存取於sidebar-menu-list -->
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/sidebarCustom.js"></script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+                            <!-- 最上頭標題及連結圖示 -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Article</strong> by iisu</a>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(window.location.href))));" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+                            <!-- 內文 -->
+								<section>
+                                    <!-- 該頁標題 class="main"-->
+									<header class="main">
+										<h1>即時視訊串流加解密的服務品質與效能測試</h1>
+									</header>
+                                    <!-- 插入圖片tagName="span" class="image main" src="image" alt=""-->
+									<div class="major" style='layout-grid:18.0pt'><w:Sdt SdtDocPart="t"
+ DocPartType="Table of Contents" DocPartUnique="t" ID="1533309415">
+ 
+ <ul><li class=MsoToc1 style='tab-stops:60.0pt right dotted 414.8pt'><span
+ lang=EN-US><a href="#_Toc441208905"><span style='font-family:標楷體;letter-spacing:
+ -1.0pt;mso-no-proof:yes'>1</span><span lang=ZH-TW style='font-family:標楷體;
+ letter-spacing:-1.0pt;mso-no-proof:yes'>、</span><span style='font-size:12.0pt;
+ mso-bidi-font-size:11.0pt;font-family:Calibri;mso-ascii-theme-font:minor-latin;
+ mso-fareast-font-family:新細明體;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+ minor-latin;color:windowtext;mso-no-proof:yes;text-decoration:none;text-underline:
+ none'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+ lang=ZH-TW style='font-family:標楷體;mso-no-proof:yes'>專題概述</span><span
+ style='color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;
+ text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'>.. </span></span><!--[if supportFields]><span
+ style='color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;
+ text-decoration:none;text-underline:none'><span style='mso-element:field-begin'></span>
+ PAGEREF _Toc441208905 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
+ style='mso-fareast-font-family:"MS Mincho";color:windowtext;display:none;
+ mso-hide:screen;mso-fareast-language:JA;mso-no-proof:yes;text-decoration:none;
+ text-underline:none'>1</span><span style='color:windowtext;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400340031003200300038003900300035000000</w:data>
+ </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+ display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:
+ none'><span style='mso-element:field-end'></span></span><![endif]--></a></span><span
+ lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:Calibri;
+ mso-ascii-theme-font:minor-latin;mso-fareast-font-family:新細明體;mso-fareast-theme-font:
+ minor-fareast;mso-hansi-theme-font:minor-latin;mso-no-proof:yes'><o:p></o:p></span></li>
+ <li class=MsoToc1 style='tab-stops:60.0pt right dotted 414.8pt'><span
+ lang=EN-US><a href="#_Toc441208906"><span style='font-family:標楷體;letter-spacing:
+ -1.0pt;mso-no-proof:yes'>2</span><span lang=ZH-TW style='font-family:標楷體;
+ letter-spacing:-1.0pt;mso-no-proof:yes'>、</span><span style='font-size:12.0pt;
+ mso-bidi-font-size:11.0pt;font-family:Calibri;mso-ascii-theme-font:minor-latin;
+ mso-fareast-font-family:新細明體;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+ minor-latin;color:windowtext;mso-no-proof:yes;text-decoration:none;text-underline:
+ none'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+ lang=ZH-TW style='font-family:標楷體;mso-no-proof:yes'>製作工作</span><span
+ style='color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;
+ text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'>.. </span></span><!--[if supportFields]><span
+ style='color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;
+ text-decoration:none;text-underline:none'><span style='mso-element:field-begin'></span>
+ PAGEREF _Toc441208906 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
+ style='mso-fareast-font-family:"MS Mincho";color:windowtext;display:none;
+ mso-hide:screen;mso-fareast-language:JA;mso-no-proof:yes;text-decoration:none;
+ text-underline:none'>1</span><span style='color:windowtext;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400340031003200300038003900300036000000</w:data>
+ </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+ display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:
+ none'><span style='mso-element:field-end'></span></span><![endif]--></a></span><span
+ lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:Calibri;
+ mso-ascii-theme-font:minor-latin;mso-fareast-font-family:新細明體;mso-fareast-theme-font:
+ minor-fareast;mso-hansi-theme-font:minor-latin;mso-no-proof:yes'><o:p></o:p></span></li>
+ <li class=MsoToc2 style='margin-left:20.0pt;tab-stops:right dotted 414.8pt'><span
+ lang=EN-US><a href="#_Toc441208907"><span style='letter-spacing:1.0pt;
+ mso-no-proof:yes'>2.1</span><span style='mso-no-proof:yes'> </span><span
+ lang=ZH-TW style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+ mso-hansi-font-family:"Times New Roman";mso-no-proof:yes'>播放器製作</span><span
+ style='color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;
+ text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'>.. </span></span><!--[if supportFields]><span
+ style='color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;
+ text-decoration:none;text-underline:none'><span style='mso-element:field-begin'></span>
+ PAGEREF _Toc441208907 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
+ style='mso-fareast-font-family:"MS Mincho";color:windowtext;display:none;
+ mso-hide:screen;mso-fareast-language:JA;mso-no-proof:yes;text-decoration:none;
+ text-underline:none'>1</span><span style='color:windowtext;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400340031003200300038003900300037000000</w:data>
+ </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+ display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:
+ none'><span style='mso-element:field-end'></span></span><![endif]--></a></span><span
+ lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:Calibri;
+ mso-ascii-theme-font:minor-latin;mso-fareast-font-family:新細明體;mso-fareast-theme-font:
+ minor-fareast;mso-hansi-theme-font:minor-latin;mso-no-proof:yes'><o:p></o:p></span></li>
+ <li class=MsoToc2 style='margin-left:20.0pt;tab-stops:right dotted 414.8pt'><span
+ lang=EN-US><a href="#_Toc441208908"><span style='letter-spacing:1.0pt;
+ mso-no-proof:yes'>2.2</span><span style='mso-no-proof:yes'> </span><span
+ lang=ZH-TW style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+ mso-hansi-font-family:"Times New Roman";mso-no-proof:yes'>接收檔案端製作</span><span
+ style='color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;
+ text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'>.. </span></span><!--[if supportFields]><span
+ style='color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;
+ text-decoration:none;text-underline:none'><span style='mso-element:field-begin'></span>
+ PAGEREF _Toc441208908 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
+ style='mso-fareast-font-family:"MS Mincho";color:windowtext;display:none;
+ mso-hide:screen;mso-fareast-language:JA;mso-no-proof:yes;text-decoration:none;
+ text-underline:none'>3</span><span style='color:windowtext;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400340031003200300038003900300038000000</w:data>
+ </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+ display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:
+ none'><span style='mso-element:field-end'></span></span><![endif]--></a></span><span
+ lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:Calibri;
+ mso-ascii-theme-font:minor-latin;mso-fareast-font-family:新細明體;mso-fareast-theme-font:
+ minor-fareast;mso-hansi-theme-font:minor-latin;mso-no-proof:yes'><o:p></o:p></span></li>
+ <li class=MsoToc2 style='margin-left:20.0pt;tab-stops:right dotted 414.8pt'><span
+ lang=EN-US><a href="#_Toc441208909"><span style='letter-spacing:1.0pt;
+ mso-no-proof:yes'>2.3</span><span style='mso-no-proof:yes'> </span><span
+ lang=ZH-TW style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+ mso-hansi-font-family:"Times New Roman";mso-no-proof:yes'>發送檔案端製作</span><span
+ style='color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;
+ text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'>.. </span></span><!--[if supportFields]><span
+ style='color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;
+ text-decoration:none;text-underline:none'><span style='mso-element:field-begin'></span>
+ PAGEREF _Toc441208909 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
+ style='mso-fareast-font-family:"MS Mincho";color:windowtext;display:none;
+ mso-hide:screen;mso-fareast-language:JA;mso-no-proof:yes;text-decoration:none;
+ text-underline:none'>6</span><span style='color:windowtext;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400340031003200300038003900300039000000</w:data>
+ </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+ display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:
+ none'><span style='mso-element:field-end'></span></span><![endif]--></a></span><span
+ lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:Calibri;
+ mso-ascii-theme-font:minor-latin;mso-fareast-font-family:新細明體;mso-fareast-theme-font:
+ minor-fareast;mso-hansi-theme-font:minor-latin;mso-no-proof:yes'><o:p></o:p></span></li>
+ <li class=MsoToc1 style='tab-stops:60.0pt right dotted 414.8pt'><span
+ lang=EN-US><a href="#_Toc441208910"><span style='font-family:標楷體;letter-spacing:
+ -1.0pt;mso-no-proof:yes'>3</span><span lang=ZH-TW style='font-family:標楷體;
+ letter-spacing:-1.0pt;mso-no-proof:yes'>、</span><span style='font-size:12.0pt;
+ mso-bidi-font-size:11.0pt;font-family:Calibri;mso-ascii-theme-font:minor-latin;
+ mso-fareast-font-family:新細明體;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+ minor-latin;color:windowtext;mso-no-proof:yes;text-decoration:none;text-underline:
+ none'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+ lang=ZH-TW style='font-family:標楷體;mso-no-proof:yes'>結論</span><span
+ style='color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;
+ text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'>.. </span></span><!--[if supportFields]><span
+ style='color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;
+ text-decoration:none;text-underline:none'><span style='mso-element:field-begin'></span>
+ PAGEREF _Toc441208910 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
+ style='mso-fareast-font-family:"MS Mincho";color:windowtext;display:none;
+ mso-hide:screen;mso-fareast-language:JA;mso-no-proof:yes;text-decoration:none;
+ text-underline:none'>9</span><span style='color:windowtext;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400340031003200300038003900310030000000</w:data>
+ </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+ display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:
+ none'><span style='mso-element:field-end'></span></span><![endif]--></a></span><span
+ lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:Calibri;
+ mso-ascii-theme-font:minor-latin;mso-fareast-font-family:新細明體;mso-fareast-theme-font:
+ minor-fareast;mso-hansi-theme-font:minor-latin;mso-no-proof:yes'><o:p></o:p></span></li>
+ <li class=MsoToc1><span lang=EN-US><a href="#_Toc441208911"><span lang=ZH-TW
+ style='font-family:標楷體;mso-no-proof:yes'>參考文獻</span><span style='color:windowtext;
+ display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:
+ none'><span style='mso-tab-count:1 dotted'>.. </span></span><!--[if supportFields]><span
+ style='color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes;
+ text-decoration:none;text-underline:none'><span style='mso-element:field-begin'></span>
+ PAGEREF _Toc441208911 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
+ style='mso-fareast-font-family:"MS Mincho";color:windowtext;display:none;
+ mso-hide:screen;mso-fareast-language:JA;mso-no-proof:yes;text-decoration:none;
+ text-underline:none'>9</span><span style='color:windowtext;display:none;
+ mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400340031003200300038003900310031000000</w:data>
+ </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+ display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:
+ none'><span style='mso-element:field-end'></span></span><![endif]--></a></span><span
+ lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:Calibri;
+ mso-ascii-theme-font:minor-latin;mso-fareast-font-family:新細明體;mso-fareast-theme-font:
+ minor-fareast;mso-hansi-theme-font:minor-latin;mso-no-proof:yes'><o:p></o:p></span></li></ul>
+ <p class=MsoNormal><!--[if supportFields]><b><span style='mso-bidi-font-size:
+ 14.0pt;mso-bidi-font-family:"Times New Roman";mso-ansi-language:ZH-TW'><span
+ style='mso-element:field-end'></span></span></b><![endif]--><b><span
+ style='mso-bidi-font-size:14.0pt;mso-bidi-font-family:"Times New Roman";
+ mso-ansi-language:ZH-TW'><br clear=all style='mso-special-character:line-break;
+ page-break-before:always'>
+ </span></b><span style='mso-bidi-font-size:14.0pt;mso-bidi-font-family:"Times New Roman";
+ mso-ansi-language:ZH-TW'><b><o:p>&nbsp;</o:p></b></span></p>
+</w:Sdt></div>
+
+<span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:標楷體;mso-font-kerning:26.0pt;mso-ansi-language:EN-US;
+mso-fareast-language:ZH-TW;mso-bidi-language:AR-SA;mso-bidi-font-weight:bold'><br
+clear=all style='page-break-before:always;mso-break-type:section-break'>
+</span>
+
+<div class=WordSection2 style='layout-grid:18.0pt'>
+
+<h1 style='margin-left:0cm;text-indent:0cm;mso-list:l11 level1 lfo9'><a
+name="_Toc441208905"><![if !supportLists]><span lang=EN-US style='mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-bidi-font-family:標楷體;letter-spacing:-1.0pt'><span
+style='mso-list:Ignore'>1、<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='mso-bidi-font-size:22.0pt;
+font-family:標楷體'>專題概述</span></a><span lang=EN-US style='mso-bidi-font-size:
+22.0pt;font-family:標楷體'><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='margin-left:19.65pt'><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>此次專題製作是以加密影片為主軸，並且能透過網路傳遞。加密方式以</span><span
+lang=EN-US>XOR</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>運算的方法，而網路傳遞以檔案方式傳送，最後能製作出簡單加解密播放程式。</span></p>
+
+<h1 style='margin-left:0cm;text-indent:0cm;mso-list:l11 level1 lfo9'><a
+name="_Toc441208906"><![if !supportLists]><span lang=EN-US style='mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-bidi-font-family:標楷體;letter-spacing:-1.0pt'><span
+style='mso-list:Ignore'>2、<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='mso-bidi-font-size:22.0pt;
+font-family:標楷體'>製作工作</span></a><span lang=EN-US style='mso-bidi-font-size:
+22.0pt;font-family:標楷體'><o:p></o:p></span></h1>
+
+<h2 style='margin-left:0cm;text-indent:0cm;mso-list:l11 level2 lfo9'><a
+name="_Toc441208907"><![if !supportLists]><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt'><span style='mso-list:Ignore'>2.1 </span></span><![endif]><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>播放器製作</span></a></h2>
+
+<p class=MsoNormal style='text-indent:0cm'><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>要求</span><span
+lang=EN-US>: </span></p>
+
+<p class=MsoListParagraph style='margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l3 level1 lfo11'><![if !supportLists]><span
+lang=EN-US style='font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>安裝</span><span lang=EN-US>VLC Player</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，</span><span lang=EN-US>32</span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>位元版本需用</span><span
+lang=EN-US>32</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>位元</span><span lang=EN-US>JDK</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>製作，</span><span lang=EN-US>64</span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>位元版本需用</span><span
+lang=EN-US>64</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>位元</span><span lang=EN-US>JDK</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>製作</span><span lang=EN-US>[1]</span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>。</span></p>
+
+<p class=MsoListParagraph style='margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l3 level1 lfo11'><![if !supportLists]><span
+lang=EN-US style='font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>使用</span><span lang=EN-US>NetBeans[2]</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>環境開發</span></p>
+
+<p class=MsoListParagraph style='margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l3 level1 lfo11'><![if !supportLists]><span
+lang=EN-US style='font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>使用</span><span lang=EN-US>VLCJ[3]</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>來連結播放器函示庫</span></p>
+
+<p class=MsoListParagraph style='margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l3 level1 lfo11'><![if !supportLists]><span
+lang=EN-US style='font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>下載</span><span lang=EN-US>Google</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>提供的</span><span lang=EN-US>vlcj.jar - <a
+href="http://codeur.netne.net/apis/vlcj-3.0.1-dist.zip">http://codeur.netne.net/apis/vlcj-3.0.1-dist.zip</a></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>首先用</span><span
+lang=EN-US>NetBeans</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>建立方案，並在</span><span
+lang=EN-US>Libraries</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>加入</span><span
+lang=EN-US>jar</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>，如下</span></p>
+
+<p class=a7 align=left style='text-align:left'><span><img src="images/image001.png"></span></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>並在專案新增</span><span
+lang=EN-US>Java Class…</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，為</span><span
+class=SpellE><span lang=EN-US>MediaPlayer</span></span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，程式如下</span></p>
+<textarea rows="25">
+import com.sun.jna.Native;
+import com.sun.jna.NativeLibrary;
+import java.awt.BorderLayout;
+import java.awt.Canvas;
+import java.awt.Color;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import uk.co.caprica.vlcj.binding.LibVlc;
+import uk.co.caprica.vlcj.player.MediaPlayerFactory;
+import uk.co.caprica.vlcj.player.embedded.EmbeddedMediaPlayer;
+import uk.co.caprica.vlcj.player.embedded.windows.Win32FullScreenStrategy;
+import uk.co.caprica.vlcj.runtime.RuntimeUtil;
+
+public class MediaPlayer {
+    private EmbeddedMediaPlayer emp;
+    private JFrame frame;
+    private Canvas canvas;
+    private JPanel panel;
+    public void Load()
+    {
+        /****************************************
+        * 建立GUI介面
+        */
+        frame = new JFrame();
+        frame.setLocation(100, 100);
+        frame.setSize(1000, 600);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.setVisible(true);
+        /*
+         * Canvas用來顯示影像
+         */
+        canvas = new Canvas();
+        canvas.setBackground(Color.black);
+        panel = new JPanel();
+        panel.setLayout(new BorderLayout());
+        panel.add(canvas);
+        frame.add(canvas);
+        /*************************************
+         * 讀取影像檔,使用vlcj
+         */
+        //讀取VLC安裝位置
+        NativeLibrary.addSearchPath(RuntimeUtil.getLibVlcLibraryName(), "C:\\Program Files\\VideoLAN\\VLC");
+        Native.loadLibrary(RuntimeUtil.getLibVlcLibraryName(), LibVlc.class);
+
+        initMediaPlayer();        
+        /********************************************
+        * 
+        */
+    }
+    private void initMediaPlayer(){
+        //初始化播放器
+        MediaPlayerFactory mpf = new MediaPlayerFactory();
+        emp = mpf.newEmbeddedMediaPlayer(new Win32FullScreenStrategy(frame));
+        emp.setVideoSurface(mpf.newVideoSurface(canvas));
+        //emp.toggleFullScreen();
+        emp.setEnableMouseInputHandling(false);
+        emp.setEnableKeyInputHandling(false);
+    }
+    public void playCache(){
+        String file="cache.mp4";
+        emp.prepareMedia(file);
+        emp.play();
+    }
+    public void play(String file_name){
+        String file=file_name;
+        emp.prepareMedia(file);
+        emp.play();
+    }
+}
+</textarea><br><br>
+<p class=MsoNormal style='text-indent:0cm;line-height:normal'><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>使用方法如下</span></p>
+
+<textarea rows="6">
+MediaPlayer mp = new MediaPlayer();
+//播放本地文件
+mp.play(FILE_NAME);
+//播放快取影像
+mp.playCache()
+</textarea>
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<h2 style='margin-left:0cm;text-indent:0cm;mso-list:l11 level2 lfo9'><a
+name="_Toc441208908"><![if !supportLists]><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt'><span style='mso-list:Ignore'>2.2 </span></span><![endif]><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>接收檔案端製作</span></a></h2>
+
+<p class=MsoNormal style='text-indent:0cm'><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>需求參數</span><span
+lang=EN-US>:</span></p>
+
+<p class=MsoListParagraph style='margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l5 level1 lfo12'><![if !supportLists]><span
+lang=EN-US style='font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US>IP_ADDRESS</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>伺服器位址</span></p>
+
+<p class=MsoListParagraph style='margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l5 level1 lfo12'><![if !supportLists]><span
+lang=EN-US style='font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US>PORT_NUMBER</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>伺服器連接埠</span></p>
+
+<p class=MsoListParagraph style='margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l5 level1 lfo12'><![if !supportLists]><span
+lang=EN-US style='font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US>PASSWORD </span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>解密密碼</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>在專案新增</span><span
+class=SpellE><span lang=EN-US>JFrame</span></span><span lang=EN-US> Form…</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，並拉取所需元件，以設定參數，如下</span></p>
+
+<p class=a7 align=left style='text-align:left'><span><img src="images/image002.png"></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span lang=EN-US>PLAY</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>按鈕動作程式，如下</span></p>
+
+<textarea rows="10">
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        String Ip_address = jTextField1.getText();
+        int Poat_num = Integer.parseInt(jTextField2.getText());
+        char[] Password = jPasswordField1.getPassword();
+        SimpleFileClient client = new SimpleFileClient(Ip_address,Poat_num,Password);
+        try{
+            client.Load();
+        }
+        catch(Exception err){
+            System.out.println(err);
+        }
+        close();
+        MediaPlayer mp = new MediaPlayer();
+        mp.Load();
+        mp.play();
+    }
+</textarea><br><br>
+<p class=MsoNormal style='text-indent:0cm'><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>此外還須建立</span><span
+lang=EN-US>Java Class…</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，為</span><span
+class=SpellE><span lang=EN-US>SimpleFileClient</span></span></p>
+
+    
+<textarea rows="25">
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.Socket;
+
+public class SimpleFileClient {
+    public static int SOCKET_PORT = 8888;       // you may change this
+    public static String SERVER = "127.0.0.1";  // localhost
+    public static String FILE_TO_RECEIVED = "cache.mp4";  
+    // you may change this, I give a
+    // different name because i don't want to
+    // overwrite the one used by server...
+    public static char[] PASSWORD = null;
+    public final static int FILE_SIZE = 67108864;    
+    // file size temporary hard coded
+    // should bigger than the file to be downloaded
+    // if want to send the big file need change this limit
+    public SimpleFileClient() {}
+    public SimpleFileClient(String address, int port, char[] password) {
+        SERVER = address;
+        SOCKET_PORT = port;
+        PASSWORD = password;
+    }
+    public void Load() throws IOException {
+        int bytesRead;
+        int current;
+        FileOutputStream fos = null;
+        BufferedOutputStream bos = null;
+        Socket sock = null;
+
+        try {
+            sock = new Socket(SERVER, SOCKET_PORT);
+            System.out.println("Connecting...");
+            byte [] mybytearray  = new byte [FILE_SIZE];
+            InputStream is = sock.getInputStream();
+
+            fos = new FileOutputStream(FILE_TO_RECEIVED);
+            bos = new BufferedOutputStream(fos);
+            bytesRead = is.read(mybytearray,0,mybytearray.length);
+
+            current = bytesRead;
+            do {
+                bytesRead = 
+                    is.read(mybytearray, current, (mybytearray.length-current));
+                if(bytesRead >= 0) current += bytesRead;
+            } while(bytesRead > -1);
+            //解密
+            for (int i=0; i<(int)mybytearray.length; i++){
+                for (int j=(int)PASSWORD.length-1; j>=0; j--){
+                    mybytearray[i] = 
+                        (byte)((int)mybytearray[i] ^ (int)PASSWORD[j]);
+                }
+            }
+            //寫檔
+            bos.write(mybytearray, 0 , current);
+            bos.flush();
+            System.out.println("File " + FILE_TO_RECEIVED
+                + " downloaded (" + current + " bytes read)");
+        }
+        finally {
+          if (fos != null) fos.close();
+          if (bos != null) bos.close();
+          if (sock != null) sock.close();
+        }
+    }
+}
+
+</textarea>
+
+<h2 style='margin-left:0cm;text-indent:0cm;mso-list:l11 level2 lfo9'><a
+name="_Toc441208909"><![if !supportLists]><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt'><span style='mso-list:Ignore'>2.3 </span></span><![endif]><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>發送檔案端製作</span></a></h2>
+
+<p class=MsoNormal style='text-indent:0cm'><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>需求參數</span><span
+lang=EN-US>:</span></p>
+
+<p class=MsoListParagraph style='margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l8 level1 lfo13'><![if !supportLists]><span
+lang=EN-US style='font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US>PORT_NUMBER </span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>伺服器連接埠</span></p>
+
+<p class=MsoListParagraph style='margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l8 level1 lfo13'><![if !supportLists]><span
+lang=EN-US style='font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US>PASSWORD </span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>加密密碼</span></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>在專案新增</span><span
+class=SpellE><span lang=EN-US>JFrame</span></span><span lang=EN-US> Form…</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，並拉取所需元件，以設定參數，如下</span></p>
+
+<p class=a7 align=left style='text-align:left'><span><img src="images/image003.png"</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span lang=EN-US>Stream</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>按鈕動作程式，如下</span></p>
+
+<textarea rows="15">
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    // TODO add your handling code here:
+    int Poat_num = Integer.parseInt(jTextField1.getText());
+    String file_name = getfile();
+    char[] Password = jTextField2.getText().toCharArray();
+    server = new SimpleFileServer(Poat_num, file_name, Password);
+    try{
+        server.Load();
+    }
+    catch(Exception err){
+        System.out.println(err);
+    }
+}
+//讀取檔案函式
+private String getfile(){
+    try{
+        JFileChooser choose=new JFileChooser();
+        choose.showOpenDialog(this);
+        File f = choose.getSelectedFile();
+        return f.getPath();
+    }catch(Exception err){}
+    return null;
+}
+</textarea><br>
+
+<p class=a9><span style='font-family:標楷體;mso-ascii-font-family:Consolas;
+mso-hansi-font-family:Consolas'>建立一個</span><span lang=EN-US>Java Class…</span><span
+style='font-family:標楷體;mso-ascii-font-family:Consolas;mso-hansi-font-family:
+Consolas'>，為</span><span class=SpellE><span lang=EN-US>SimpleFileServer</span></span><span
+style='font-family:標楷體;mso-ascii-font-family:Consolas;mso-hansi-font-family:
+Consolas'>，程式碼如下</span></p>
+
+<textarea rows="25">
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class SimpleFileServer {
+    public static int SOCKET_PORT = 8888;
+    public static String FILE_TO_SEND = "cache.mp4";
+    public static char[] PASSWORD = null;
+    public SimpleFileServer(){}
+    public SimpleFileServer(int port, String file, char[] password) {
+        SOCKET_PORT = port;
+        FILE_TO_SEND = file;
+        PASSWORD = password;
+    }
+    public void Load () throws IOException {
+      FileInputStream fis = null;
+      BufferedInputStream bis = null;
+      OutputStream os = null;
+      ServerSocket servsock = null;
+      Socket sock = null;
+      try {     
+        servsock = new ServerSocket(SOCKET_PORT);
+        System.out.println("The Current Port is "+SOCKET_PORT);
+        System.out.println("Waiting...");
+        try {
+            sock = servsock.accept();
+            System.out.println("Accepted connection : " + sock);
+            // send file
+            File myFile = new File (FILE_TO_SEND);
+            byte [] mybytearray  = new byte [(int)myFile.length()];
+            fis = new FileInputStream(myFile);
+            bis = new BufferedInputStream(fis);
+            bis.read(mybytearray,0,mybytearray.length);
+            //加密
+            for (int i=0; i<(int)mybytearray.length; i++){
+                for (int j=0; j<(int)PASSWORD.length; j++){
+                        mybytearray[i] = 
+                            (byte)((int)mybytearray[i] ^ (int)PASSWORD[j]);
+                }
+            }
+          os = sock.getOutputStream();
+          System.out.println("Sending " + FILE_TO_SEND 
+                + "(" + mybytearray.length + " bytes)");
+          os.write(mybytearray,0,mybytearray.length);
+          os.flush();
+          System.out.println("Done.");
+        }
+        finally {
+          if (bis != null) bis.close();
+          if (os != null) os.close();
+          if (sock!=null) sock.close();
+        }
+      }
+      finally {
+        if (servsock != null) servsock.close();
+      }
+    }
+}
+</textarea><br>
+<p class=MsoNormal style='text-indent:0cm'><span style='font-family:標楷體;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>程式完成</span><span
+lang=EN-US>~</span></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='margin-left:0cm;text-indent:0cm;mso-list:l11 level1 lfo9'><a
+name="_Toc441208910"><![if !supportLists]><span lang=EN-US style='mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-bidi-font-family:標楷體;letter-spacing:-1.0pt'><span
+style='mso-list:Ignore'>3、<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='mso-bidi-font-size:22.0pt;
+font-family:標楷體'>結論</span></a><span lang=EN-US style='mso-bidi-font-size:22.0pt;
+font-family:標楷體'><o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>此次專題程式令我意外的是有</span><span lang=EN-US>JAVA
+NATIVE</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>的函示庫可以用，由於</span><span lang=EN-US>VLC</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的程式源碼都是</span><span lang=EN-US>C++</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，原本想直接透過</span><span lang=EN-US>ActiveX</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>來導入</span><span lang=EN-US>VLC</span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，不過在於</span><span
+lang=EN-US>HTTP SERVER</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的部分，</span><span
+lang=EN-US>C</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>可能要多花點力氣，所以最後才選用</span><span
+lang=EN-US>JAVA</span><span style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>來開發程式。另外，如果要在</span><span lang=EN-US>IOS</span><span
+style='font-family:標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>或</span><span lang=EN-US>MAC</span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>上開發可以使用</span><span
+class=SpellE><span lang=EN-US>VLCKit</span></span><span style='font-family:
+標楷體;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，是以</span><span
+lang=EN-US>Objective-C</span><span style='font-family:標楷體;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>語言開發。</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='margin-left:0cm;text-indent:0cm;mso-list:none'><a
+name="_Toc441208911"><span style='mso-bidi-font-size:22.0pt;font-family:標楷體'>參考文獻</span></a><span
+lang=EN-US style='mso-bidi-font-size:22.0pt;font-family:標楷體'><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
+margin-left:24.0pt;text-indent:0cm;line-height:106%;mso-pagination:widow-orphan;
+mso-list:l6 level1 lfo1'><![if !supportLists]><span lang=EN-US
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'><span style='mso-list:Ignore'>[1]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'>Java - How to read audio and video using <span class=SpellE>vlcj</span>
+</span><span lang=EN-US><a href="https://www.youtube.com/watch?v=XTQ1b3-TUI4"><span
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:"Times New Roman"'>https://www.youtube.com/watch?v=XTQ1b3-TUI4</span></a></span><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
+margin-left:24.0pt;text-indent:0cm;line-height:106%;mso-pagination:widow-orphan;
+mso-list:l6 level1 lfo1'><![if !supportLists]><span lang=EN-US
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'><span style='mso-list:Ignore'>[2]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'>Welcome to NetBeans </span><span lang=EN-US><a
+href="https://netbeans.org/"><span style='mso-bidi-font-size:14.0pt;line-height:
+106%;mso-bidi-font-family:"Times New Roman"'>https://netbeans.org/</span></a></span><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
+margin-left:24.0pt;text-indent:0cm;line-height:106%;mso-pagination:widow-orphan;
+mso-list:l6 level1 lfo1'><![if !supportLists]><span lang=EN-US
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'><span style='mso-list:Ignore'>[3]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'>vlcj/README.md at master · <span class=SpellE>caprica</span>/<span
+class=SpellE>vlcj</span> · GitHub </span><span lang=EN-US><a
+href="https://github.com/caprica/vlcj/blob/master/README.md"><span
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:"Times New Roman"'>https://github.com/caprica/vlcj/blob/master/README.md</span></a></span><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
+margin-left:24.0pt;text-indent:0cm;line-height:106%;mso-pagination:widow-orphan;
+mso-list:l6 level1 lfo1'><![if !supportLists]><span lang=EN-US
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'><span style='mso-list:Ignore'>[4]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US>Transfer a file via Socket <a
+href="http://www.rgagnon.com/javadetails/java-0542.html"><span
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:"Times New Roman"'>http://www.rgagnon.com/javadetails/java-0542.html</span></a></span><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
+margin-left:24.0pt;text-indent:0cm;line-height:106%;mso-pagination:widow-orphan;
+mso-list:l6 level1 lfo1'><![if !supportLists]><span lang=EN-US
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'><span style='mso-list:Ignore'>[5]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+class=SpellE><span lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:
+106%;mso-bidi-font-family:"Times New Roman"'>Lecteur</span></span><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'> <span class=SpellE>vid_o</span> et audio avec <span
+class=SpellE>vlcj</span> en java </span><span lang=EN-US><a
+href="http://www.javacademia.com/2015/01/java-lire-les-fichiers-multimedia-video.html"><span
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:"Times New Roman"'>http://www.javacademia.com/2015/01/java-lire-les-fichiers-multimedia-video.html</span></a></span><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
+margin-left:24.0pt;text-indent:0cm;line-height:106%;mso-pagination:widow-orphan;
+mso-list:l6 level1 lfo1'><![if !supportLists]><span lang=EN-US
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'><span style='mso-list:Ignore'>[6]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+class=SpellE><span lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:
+106%;mso-bidi-font-family:"Times New Roman"'>CodePlex</span></span><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'> - LibVLC.NET – Home </span><span lang=EN-US><a
+href="https://libvlcnet.codeplex.com/"><span style='mso-bidi-font-size:14.0pt;
+line-height:106%;mso-bidi-font-family:"Times New Roman"'>https://libvlcnet.codeplex.com/</span></a></span><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
+margin-left:24.0pt;text-indent:0cm;line-height:106%;mso-pagination:widow-orphan;
+mso-list:l6 level1 lfo1'><![if !supportLists]><span lang=EN-US
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'><span style='mso-list:Ignore'>[7]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+class=SpellE><span lang=EN style='mso-ansi-language:EN'>LibVLC</span></span><span
+lang=EN style='mso-ansi-language:EN'> Tutorial </span><span lang=EN-US><a
+href="https://wiki.videolan.org/LibVLC_Tutorial#Sample_LibVLC_Code"><span
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:"Times New Roman"'>https://wiki.videolan.org/LibVLC_Tutorial#Sample_LibVLC_Code</span></a></span><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
+margin-left:24.0pt;text-indent:0cm;line-height:106%;mso-pagination:widow-orphan;
+mso-list:l6 level1 lfo1'><![if !supportLists]><span lang=EN-US
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'><span style='mso-list:Ignore'>[8]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN style='mso-ansi-language:EN'>Using the VLC ActiveX control in&nbsp;WPF </span><span
+lang=EN-US><a
+href="https://zahidakbar.wordpress.com/2011/06/27/using-the-vlc-activex-control-in-wpf/"><span
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:"Times New Roman"'>https://zahidakbar.wordpress.com/2011/06/27/using-the-vlc-activex-control-in-wpf/</span></a></span><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
+margin-left:24.0pt;text-indent:0cm;line-height:106%;mso-pagination:widow-orphan;
+mso-list:l6 level1 lfo1'><![if !supportLists]><span lang=EN-US
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'><span style='mso-list:Ignore'>[9]<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'>Saving a stream while playing it using <span class=SpellE>LibVLC</span>
+</span><span lang=EN-US><a
+href="http://stackoverflow.com/questions/16515099/saving-a-stream-while-playing-it-using-libvlc"><span
+style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:"Times New Roman"'>http://stackoverflow.com/questions/16515099/saving-a-stream-while-playing-it-using-libvlc</span></a></span><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
+margin-left:24.0pt;text-indent:0cm;line-height:106%;mso-pagination:widow-orphan'><span
+lang=EN-US style='mso-bidi-font-size:14.0pt;line-height:106%;mso-bidi-font-family:
+"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+                                    
+								</section>
+
+						</div>
+					</div>
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul id="menu-list">
+                                        <!--已修改成XML文件讀取-->
+									</ul>
+								</nav>
+								<section>
+									<header class="major">
+										<h2>Contact Me</h2>
+									</header>
+									<p>有任何問題或相關合作歡迎與我聯絡。</p>
+									<ul class="contact">
+										<li class="fa-envelope-o"><a href="mailto:newland3798@gmail.com">newland3798@gmail.com</a></li>
+										<li class="fa-phone">(簡訊) (+886) 0981-969-787</li>
+									</ul>
+								</section>
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>

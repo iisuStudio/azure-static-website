@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>GPT(GUID Partition Table)</title>
+        <!-- 網頁編碼-->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <!-- 網頁屬於中文網站-->
+        <meta http-equiv="content-language" content="zh-tw" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!-- 側邊欄清單動態存取於sidebar-menu-list -->
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/sidebarCustom.js"></script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+                            <!-- 最上頭標題及連結圖示 -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Article</strong> by iisu</a>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(window.location.href))));" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+                            <!-- 內文 -->
+								<section>
+                                    <!-- 該頁標題 class="main"-->
+									<header class="main">
+										<h1>GPT(GUID Partition Table)</h1>
+									</header>
+                                    <!-- 插入圖片tagName="span" class="image main" src="image" alt=""-->
+									<span class="image main"><img src="images/GUID_Partition_Table_Scheme.svg.png" alt="" /></span>
+
+									<p>硬碟升級，分割時才發現有2TB容量限制….又到了動腦、用功時刻～～分割時，有個選項：『轉換到GPT磁碟』，這是啥東西？</p>
+
+                                    <p>(請勿直接問：『GPT是什麼？』那是醫學上的一種肝功能指數，搞錯對象，很尷尬的)</p>
+
+                                    <p>相信我很快會忘記，當然要做一下紀錄：</p>
+
+                                    <p>	一、定義簡說<br>
+                                        二、OS支援 <br>
+                                        三、GPT、NTFS轉換 <br>
+                                        四、問題、應用<br>
+
+									<hr class="major" />
+
+									<h2>一、定義簡說</h2>
+									<p>	由於使用上的限制，Intel+Microsoft在2004年合作開發EFI(Extensible         Firmware Interface)計畫，算是一種主機板、儲存磁碟的升
+                                        級方案，GPT(GUID Partition Table)為計畫裡的一部分，不過，並非一定要搭配EFI才能用，搭配一般BIOS也能用，只是不能作為開機系統。</p>
+
+                                    <p>	MBR磁碟的Partition資料，存放在Master(我們俗稱第0軌) <br>
+                                        GPT磁碟的每個Partition資料，都有各自的GUID，此為主要差異。</p>
+
+                                    <p>	GPT磁碟有保護區，小小佔用空間，依照作業系統不同： <br>
+                                        Windows:128MB <br>
+                                        MAC:200MB</p>
+
+                                    <p>	支援分割區 單一分割區最高容量 <br>
+                                        MBR(Master Boot Record) 4(延伸分割不計) 2TB <br>
+                                        GPT(GUID Partition Table) 沒有限制，但是Windows只能128個 18TB </p>
+
+                                    <p> 另外，跟檔案系統也有關係，FAT16上限2GB，FAT32上限2TB，NTFS上限16EB</p>
+
+                                    <p>	Windows and GPT FAQ -- 微軟對GPT的FAQ</p>
+
+                                    <p>	KIWI裡面的GPT說明 -- 只有KIWI英文，中文版資料不但有缺，還出現錯誤</p>
+
+
+									<hr class="major" />
+
+									<h2>二、OS支援(Windows)</h2>
+									<p> 1.一般支援： <br>
+                                        Windows XP 64 Bit <br>
+                                        Windows 2003 Server + SP1 <br>
+                                        Windows Vista <br>
+                                        以後的皆有支援，此處支援，乃指『可辨識、存取』，不包含開機(作為系統磁碟)</p>
+
+                                    <p>	2.開機支援(作為系統磁碟)： <br>
+                                        主機板必須支援EFI</p>
+
+									<hr class="major" />
+
+									<h2>三、GPT、NTFS轉換</h2>
+									<p>	在Windows環境，磁碟系統GPT轉換回NTFS的指令： <br>
+                                        diskpart</p>
+
+                                    <p>	選項： <br>
+                                        list disk 列出目前磁碟 <br>
+                                        select disk n 選擇目標，n為代號 <br>
+                                        clean all 清除所有分割資料，之後，即可重新分割</p>
+
+                                    <p>	如果是新的磁碟(超過2TB，包含RAID)，自然會顯示出『GPT磁碟』選項，無須另外處理</p>
+
+                                    <p>	四、目前問題： <br>
+                                        GPT 是在何年、何人制定，網路資料有異，分別有Intel，或是Intel+ Microsoft，年份也沒有很確定。</p>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul id="menu-list">
+                                        <!--已修改成XML文件讀取-->
+									</ul>
+								</nav>
+
+							<!-- Section
+								<section>
+									<header class="major">
+										<h2>Ante interdum</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+                            -->
+							<!-- Section -->
+                            <!-- 個人聯絡資訊 -->
+								<section>
+									<header class="major">
+										<h2>Contact Me</h2>
+									</header>
+									<p>有任何問題或相關合作歡迎與我聯絡。</p>
+									<ul class="contact">
+										<li class="fa-envelope-o"><a href="mailto:newland3798@gmail.com">newland3798@gmail.com</a></li>
+										<li class="fa-phone">(簡訊) (+886) 0981-969-787</li>
+                                        
+										<!--<li class="fa-home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>-->
+									</ul>
+								</section>
+
+							<!-- Footer 
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+                            -->
+                            
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+    <link name="主頁">index.html</link>
+    <link name="討論">index.html</link>
+    <class name="文章">
+        <link name="分享自製字體包給想看清楚劇情的碰油-增加Size選擇">articles/201705090542/Page1.html</link>
+        <link name="武器 神級 羽翼長弓(添加史詩般的光芒)">articles/201705090526/Page1.html</link>
+        <link name="時裝&amp;武器的副檔名(.dds/.skn/.msh/.ani/.act/.ptc)">articles/201705090456/Page1.html</link>
+        <link name="GPT(GUID Partition Table)">articles/201705081748/Page1.html</link>
+    </class>
+    
+    <class name="Projects">
+        <link name="Media Cast Screen">articles/201705090612/Page1.html</link>
+        ss name="Projects">
+        <link name="基於VLCJ的遠程加密媒體">articles/201705100023/Page1.html</link>
+    </class>
+</menu>

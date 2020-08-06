@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>霓虹燈裝置</title>
+		<script type="text/javascript">
+			var R, G, B;
+			function InverseColor()
+			{
+				document.getElementById("myFont").style.color = "rgb("+R+","+G+","+B+")";
+				R = 255-R;
+				G = 255-G;
+				B = 255-B;
+				document.getElementById("background").style.backgroundColor = "rgb("+R+","+G+","+B+")";
+			};
+			function ChangeColor()
+			{
+				R=document.getElementById("R").value;
+				G=document.getElementById("G").value;
+				B=document.getElementById("B").value;
+				InverseColor();
+			};
+			function Update()
+			{
+				document.getElementById("R").value=document.getElementById("RScollor").value;
+				document.getElementById("G").value=document.getElementById("GScollor").value;
+				document.getElementById("B").value=document.getElementById("BScollor").value;
+			};
+			var myAuto = setInterval(function(){AutoChangeColor()},200);
+			var R_over=1, G_over=1, B_over=1;
+
+			function AutoChangeColor()
+			{
+				R=Number(document.getElementById("R").value);
+				G=Number(document.getElementById("G").value);
+				B=Number(document.getElementById("B").value);
+				
+				R=(R+2*R_over);
+				G=(G+3*G_over);
+				B=(B+4*B_over);
+				if(R>255){R_over=-1;R=255;}
+				if(G>255){G_over=-1;G=255;}
+				if(B>255){B_over=-1;B=255;}
+				if(R<0){R_over=1;R=0;}
+				if(G<0){G_over=1;G=0;}
+				if(B<0){B_over=1;B=0;}
+				
+
+				document.getElementById("R").value = R;
+				document.getElementById("G").value = G;
+				document.getElementById("B").value = B;
+				document.getElementById("RScollor").value = R;
+				document.getElementById("GScollor").value = G;
+				document.getElementById("BScollor").value = B;
+				InverseColor();
+			};
+			var stopped=0;
+			function Stop()
+			{
+				clearInterval(myAuto);
+				stopped=1;
+			};
+			function Start()
+			{
+				if(stopped==1){
+					myAuto = setInterval(function(){AutoChangeColor()},200);
+					stopped=0;
+				}
+			};
+		</script>
+		<style type="text/css">
+			#background 
+			{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 100%;
+			}
+			#myFont
+			{
+				position: absolute;
+				top: 20px;
+				left: 20px;
+			}
+		</style>
+ 	</head>
+	<body>
+		<div id="background">
+			<div id="myFont">霓 虹 燈 裝 置<br><br>
+			<input type="number" ID="R" value="0" min="0" max="255" >  R </input><br>
+			<input type="range" ID="RScollor" value="0" min="0" max="255" onchange="Update()"></input><br>
+			<input type="number" ID="G" value="0" min="0" max="255"  >  G </input><br>
+			<input type="range" ID="GScollor" value="0" min="0" max="255" onchange="Update()"><br>
+			<input type="number" ID="B" value="0" min="0" max="255"  >  B </input><br>
+			<input type="range" ID="BScollor" value="0" min="0" max="255" onchange="Update()"><br>
+			<button onclick="ChangeColor()">Change Color</button><br>
+			<p>自動循環</p>
+			<button onclick="Start()">ON</button>
+			<button onclick="Stop()">OFF</button>
+			</div>
+		</div>
+	</body>
+</html>

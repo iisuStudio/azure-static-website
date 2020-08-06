@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+		<title>霓虹燈裝置Angular</title>	
+		<style type="text/css">
+			#background 
+			{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 100%;
+			}
+			#myFont
+			{
+				position: absolute;
+				top: 20px;
+				left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="background" style="background-color: rgb({{255-R}},{{255-G}},{{255-B}})">
+			<div id="myFont" style="color: rgb({{R}},{{G}},{{B}})">霓 虹 燈 裝 置<br><br>
+
+			<input type="number" ng-model="R"  ng-init="R = 0" min="0" max="255" >  R </input><br>
+			<input type="range"  ng-model="RS" ng-init="RS = 0" min="0" max="255"  ng-change="R = RS"></input><br>
+			
+			<input type="number" ng-model="G" ng-init="G = 0" min="0" max="255"  >  G </input><br>
+			<input type="range"  ng-model="GS" ng-init="GS = 0" min="0" max="255"  ng-change="G = GS"><br>
+			
+			<input type="number" ng-model="B" ng-init="B = 0" min="0" max="255"  >  B </input><br>
+			<input type="range"  ng-model="BS" ng-init="BS = 0" min="0" max="255"  ng-change="B = BS"><br>
+			
+			<button onclick="ChangeColor()">Change Color</button><br>
+			<p>自動循環</p>
+			<button onclick="Start()">ON</button>
+			<button onclick="Stop()">OFF</button>
+			</div>
+		</div>
+	</body>
+</html>
